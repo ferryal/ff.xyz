@@ -5,7 +5,7 @@ import { isWindowDefined } from "swr/_internal";
 function NightComponent() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [time, setTime] = useState("");
-  const formatter = new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',hour12:true,hour:'numeric',minute:'numeric'})
+  const formatter = new Intl.DateTimeFormat('en-ID',{timeZone:'Asia/Jakarta',hour12:false,hour:'numeric',minute:'numeric'})
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(
@@ -48,14 +48,14 @@ function NightComponent() {
         ref={canvasRef}
       />
       <div className="md:m-5 m-2 mt-3 md:mt-5 justify-end">
-        <div className="flex items-baseline space-x-1 md:space-x-2 opacity-85">
+        <div className="flex items-baseline space-x-1 md:space-x-2 opacity-85 z-10">
           <div className="rounded-full bg-white w-2 h-2 md:w-5 md:h-5"></div>
-          <div className="flex flex-col">
+          <div className="flex flex-col z-10">
             <div className="text-white text-sm md:text-2xl xl:text-4xl font-bold">
               {time}
             </div>
             <div className="text-white text-sm md:text-lg xl:text-2xl font-thin -mt-2">
-              in the uk
+              in the Jakarta
             </div>
           </div>
         </div>
@@ -86,11 +86,11 @@ function NightComponent() {
                   repeat: Infinity,
                   repeatType: "reverse",
                 }}
-                className="bg-[#DFDFDF] w-12 h-12 lg:w-24 lg:h-24 xl:w-56 xl:h-56 rounded-tl-full relative"
+                className="bg-[#DFDFDF] w-12 h-12 lg:w-24 lg:h-24 xl:w-40 xl:h-40 rounded-tl-full relative"
               />
-              <div className="absolute top-14 left-12 md:top-16 md:left-28 xl:top-20 xl:left-56 w-2 h-2  md:w-4 md:h-4 xl:h-12 xl:w-12 rounded-full bg-[#C2C2C2]" />
-              <div className="absolute top-10 left-14 md:top-24 md:left-[115px] xl:top-36 xl:left-[230px] w-4 h-4 xl:h-8 xl:w-8 rounded-full bg-[#C2C2C2]" />
-              <div className="absolute top-10 left-10 md:top-20 md:left-20 xl:top-32 xl:left-36 w-2 h-2 md:w-8 md:h-8 xl:w-16 xl:h-16 rounded-full bg-[#C2C2C2]" />
+              <div className="absolute top-14 left-12 md:top-16 md:left-20 xl:top-20 xl:left-40 w-2 h-2  md:w-4 md:h-4 xl:h-12 xl:w-12 rounded-full bg-[#C2C2C2]" />
+              <div className="absolute top-10 left-14 md:top-24 md:left-[115px] xl:top-36 xl:left-[179px] w-4 h-4 xl:h-8 xl:w-8 rounded-full bg-[#C2C2C2]" />
+              <div className="absolute top-10 left-10 md:top-20 md:left-16 xl:top-32 xl:left-24 w-2 h-2 md:w-8 md:h-8 xl:w-16 xl:h-16 rounded-full bg-[#C2C2C2]" />
             </div>
           </div>
         </motion.div>

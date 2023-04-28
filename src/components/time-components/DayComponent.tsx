@@ -4,7 +4,7 @@ import { useState,useEffect, useRef } from "react";
 function DayComponent() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [time, setTime] = useState("");
-  const formatter = new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',hour12:true,hour:'numeric',minute:'numeric'})
+  const formatter = new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Jakarta',hour12:true,hour:'numeric',minute:'numeric'})
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(
@@ -20,8 +20,8 @@ function DayComponent() {
         <div className="flex items-baseline space-x-1 md:space-x-2 opacity-85">
           <div className="rounded-full bg-white w-2 h-2 md:w-5 md:h-5"></div>
           <div className="flex flex-col">
-            <div className="text-white font-bold text-sm md:text-2xl xl:text-4xl">{time}</div>
-            <div className="text-white font-thin -mt-2 text-sm md:text-lg xl:text-2xl">in the uk</div>
+            <div className="text-white font-bold text-sm md:text-2xl xl:text-2xl">{time}</div>
+            <div className="text-white font-thin -mt-2 text-sm md:text-lg xl:text-xl">in the Jakarta</div>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ function DayComponent() {
                   repeat: Infinity,
                   repeatType: "reverse",
                 }}
-                className="bg-[#FEEA9A] w-12 h-12 lg:w-32 lg:h-32 xl:w-56 xl:h-56 rounded-tl-full relative"
+                className="bg-[#FEEA9A] w-12 h-12 lg:w-32 lg:h-32 xl:w-32 xl:h-32 rounded-tl-full relative"
               />
             </div>
           </div>

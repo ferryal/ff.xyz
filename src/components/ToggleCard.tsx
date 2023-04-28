@@ -15,7 +15,10 @@ const ToggleCard = ({ section }) => {
           },
         },
       }}
-      className="bg-white dark:bg-gray-900 rounded-3xl flex justify-center col-span-1"
+      // style={{
+      //   height: '100px'
+      // }}
+      className="bg-white dark:bg-gray-900 rounded-2xl flex justify-center col-span-1"
     >
       <div className="flex justify-center items-center md:scale-150 2xl:scale-200">
         <motion.div

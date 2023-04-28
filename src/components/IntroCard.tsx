@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { DocumentTextIcon, ArrowCircleUpIcon } from '@heroicons/react/outline'
 import Transparentpfp from '@images/transparentpfp.png'
 const IntroCard = ({ section }) => {
 	return (
 		<motion.div
 			className="col-span-3 md:col-span-2 bg-white dark:bg-gray-900
-			 rounded-3xl text-gray-600 dark:text-gray-300 aspect-2/1 pb-4 md:pb-0"
+			 rounded-2xl text-gray-600 dark:text-gray-300 aspect-2/1 pb-4 md:pb-0"
 			whileHover="groupHover"
 			animate={{ opacity: ['all'].includes(section) ? 1 : 1 }}
 			variants={{
@@ -40,24 +42,43 @@ const IntroCard = ({ section }) => {
 					>
 						<Image className="dark:brightness-90" src={Transparentpfp} />{' '}
 					</motion.div>
-					<div className="text-3xl md:text-4xl 2xl:text-4xl 2xl:mt-16 m-6 md:ml-6 ml-5 md:m-8 font-nunito font-bold">Hi, I&apos;m Ana!</div>
+					<div className="text-3xl md:text-4xl 2xl:text-4xl 2xl:mt-16 m-6 md:ml-6 ml-5 md:m-8 font-nunito font-bold">Hi, I&apos;m Ferryal Fajar!</div>
 				</div>
 				<div className="flex flex-col ml-5 justify-center 2xl:mt-10 sm:-mt-6 sm:ml-8 md:ml-6">
 					<div className="lg:text-xl xl:text-2xl 2xl:mr-20 font-nunito dark:text-gray-300">
 						{' '}
-						I&apos;m an 18 year-old student doing a BASc in Interdisciplinary Problems and Methods @
-						<a
-							className="ml-1 underline-offset-2 underline focus:outline-none"
-							href="https://lis.ac.uk"
-							rel="noreferrer"
-							target="_blank"
-						>
-							LIS
-						</a>
+						I&apos;m an Software Engineer Frontend
 					</div>
-					<div className="flex lg:text-xl xl:text-2xl 2xl:text-2xl font-base dark:text-gray-300 mt-5">
+					{/* <div className="flex lg:text-xl xl:text-2xl 2xl:text-2xl font-base dark:text-gray-300 mt-5">
 						I&apos;m interested in art, keyboards and meowies!
-					</div>
+					</div> */}
+					{/* <motion.a
+						whileHover="groupHover"
+						href="https://typefully.com/AnaArsonist"
+						rel="noreferrer"
+						animate={{ opacity: ['all', 'about'].includes(section) ? 1 : 0.3 }}
+						target="_blank"
+						variants={{
+							groupHover: {
+								scale: 1.01,
+								transition: {
+									duration: 0.1,
+									ease: 'easeInOut',
+								},
+							},
+						}}
+						className="relative flex rounded-2xl dark:bg-gray-900 bg-white col-span-2 aspect-2/1"
+					> */}
+						{/* <div className="flex ml-4 flex-col w-full justify-center"> */}
+							<Link href="https://typefully.com/AnaArsonist">
+								<div className="text-2xl xl:text-xl md:text-4xl lg:mt-5 md:mt-2 font-bold text-gray-600 dark:text-gray-300 rounded-2xl">
+									Blogs
+									{/* <DocumentTextIcon className="inline-flex ml-2 w-5 md:w-10" />{' '} */}
+									<ArrowCircleUpIcon className="inline-flex ml-2 w-3 md:w-5 rotate-45" />
+								</div>
+							</Link>
+						{/* </div> */}
+					{/* </motion.a> */}
 				</div>
 			</div>
 		</motion.div>

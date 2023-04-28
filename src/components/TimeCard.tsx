@@ -47,7 +47,7 @@ const TimeCard = ({ section }) => {
       animate={{
         opacity: section && ["all", "about"].includes(section) ? 1 : 0.3,
       }}
-      className={`text-white rounded-3xl flex relative overflow-hidden aspect-square`}
+      className={`text-white rounded-2xl flex relative overflow-hidden aspect-square`}
     >
       {timeComponent}
     </motion.div>
