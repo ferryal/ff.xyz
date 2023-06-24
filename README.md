@@ -22,7 +22,7 @@
 [![Twitter][twitter-shield]][twitter-url]
 
 <!-- PROJECT LOGO -->
-<br />
+<!-- <br />
 <div align="center">
   <a href="https://www.anahoward.me">
     <img src="https://anahoward.me/images/transparentpfp.png" alt="Logo" width="80" height="80">
@@ -37,7 +37,7 @@
     <a href="https://anahoward.me">Check it out</a>
     <a href="https://www.twitter.com/AnaArsonist">Request Feature</a>
   </p>
-</div>
+</div> -->
 
 
 
@@ -46,7 +46,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <!-- <a href="#about-the-project">About The Project</a> -->
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -66,7 +66,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## 👋 Hi! Welcome to my website c:
+<!-- ## 👋 Hi! Welcome to my website c:
 
  <a href="https://github.com/AnaArsonist/anahoward.me.git" align="center">
     <img src="https://anahoward.me/images/preview2.png" width="900" height="300">
@@ -74,7 +74,7 @@
 ·
 This is my current personal website! It's constantly in development and I thought I would make the code public so you can all see how my skills develop overtime. It's about the journey!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -124,12 +124,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Acknowledgements -->
+<!-- Acknowledgements
 ## Acknowledgements
 Thank you so much to [@NevFlynn](https://twitter.com/NevFlynn) for inspo based on his website, it's absolutely incredible. Please drop him a follow!
 
 <!-- CONTACT -->
-## Contact
+<!-- ## Contact
 
 Ana Howard - [@AnaArsonist](https://twitter.com/AnaArsonist) - hello@anahoward.me
 
@@ -138,11 +138,11 @@ Project Link: [anahoward.me](https://github.com/AnaArsonist/anahoward.me.git)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE -->
-## Usage
+<!-- ## Usage
 
-If you wish to use this repository, feel free! But please include my name in the repository and give me valid credit!
+If you wish to use this repository, feel free! But please include my name in the repository and give me valid credit! -->
 
-## meow
+<!-- ## meow -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -157,7 +157,7 @@ If you wish to use this repository, feel free! But please include my name in the
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
 [license-url]: https://github.com/AnaArsonist/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/ana-howard-45aba9215/
+[linkedin-url]: https://linkedin.com/in/ferryalfajar/
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
@@ -176,4 +176,4 @@ If you wish to use this repository, feel free! But please include my name in the
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
 [twitter-shield]: https://img.shields.io/badge/-Twitter-blue.svg?style=for-the-badge
-[twitter-url]: https://twitter.com/AnaArsonist
+[twitter-url]: https://twitter.com/iyalion
