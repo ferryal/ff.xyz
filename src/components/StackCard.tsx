@@ -4,21 +4,21 @@ import {
 	SiDocker,
 	SiGit,
 	SiBitbucket,
-	SiGo,
+	SiRedux,
 	SiJavascript,
-	SiMongodb,
+	SiEslint,
 	SiNextdotjs,
 	SiNodedotjs,
-	SiPostgresql,
+	SiCsswizardry,
 	SiReact,
 	SiRedis,
-	SiSpotify,
+	SiStyledcomponents,
 	SiTailwindcss,
 	SiTypescript,
 	SiVisualstudiocode,
 	SiWebpack,
 	SiWebstorm,
-	SiYarn,
+	SiJest,
 } from 'react-icons/si';
 const StackCard = () => {
   return (
@@ -28,20 +28,20 @@ const StackCard = () => {
         <SiDocker size={20} />
         <SiNextdotjs size={20} />
         <SiRedis size={20} />
-        <SiPostgresql size={20} />
+        <SiCsswizardry size={20} />
         <SiReact size={20} />
         <SiTailwindcss size={20} />
         <SiNodedotjs size={20} />
-        <SiGo size={20} />
+        <SiRedux size={20} />
         <SiJavascript size={20} />
         <SiAmazonaws size={20} />
         <SiWebstorm size={20} />
         <SiWebpack size={20} />
         <SiBabel size={20} />
-        <SiYarn size={20} />
+        <SiJest size={20} />
         <SiGit size={20} />
-        <SiSpotify size={20} />
-        <SiMongodb size={20} />
+        <SiStyledcomponents size={20} />
+        <SiEslint size={20} />
         <SiVisualstudiocode size={20} />
         <SiBitbucket size={20} />
       </div>

@@ -48,8 +48,8 @@ const WorkCard = () => {
     },
   ]
   return (
-    // <div className="rounded-2xl border w-ful border-zinc-100 p-6 dark:border-zinc-700/40 rounded-2xl dark:bg-gray-900 bg-white col-span-2 aspect-2/1">
-    <div className="col-span-2  aspect-2/1 pb-4 md:pb-0 w-full flex items-center justify-center rounded-2xl dark:bg-gray-900 bg-white p-2 text-fuchsia-100 md:col-span-2">
+    // <div className="col-span-3 flex items-center justify-center rounded-2xl dark:bg-gray-900 bg-white p-3 text-fuchsia-100 md:col-span-2">
+    <div className="col-span-3 aspect-2/1 pb-4 md:pb-0 flex items-center justify-center rounded-2xl dark:bg-gray-900 bg-white p-2 text-fuchsia-100 md:col-span-2">
       {/* <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Work</span>
@@ -58,7 +58,7 @@ const WorkCard = () => {
       <ol className="">
         {resume.map((role: any, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
-            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-[#121516] dark:ring-0">
               {role.logo && <Image src={role.logo} alt="" className="h-5 w-5 rounded-full" unoptimized />}
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">

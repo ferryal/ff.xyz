@@ -7,6 +7,7 @@ export default function Document() {
 			<Head>
 				<title>Ferryal Fajar - Software Engineer Frontend @Dagangan</title>
 				<link rel="icon" type="image/png" href="https://anahoward.me/images/eyesemoji.png" />
+				<link></link>
 				<meta name="title" content="Ferryal Fajar - Software Engineer Frontend @Dagangan" />
 				{/* facebook  / open graph */}
 				<meta property="og:type" content="website" />
@@ -37,7 +38,8 @@ export default function Document() {
 				`}
 			</Script>
 			</Head>
-			<body className="bg-[#f7f2f2] dark:bg-gray-800">
+			{/* <body className="bg-[#f7f2f2] dark:bg-gray-800"> */}
+			<body className="bg-[#f7f2f2] dark:bg-[#121516]">
 				<Main />
 				<NextScript />
 			</body>
