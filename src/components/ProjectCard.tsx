@@ -50,7 +50,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         <div className='space-y-2'>
 					<div className='flex gap-2 items-center'>
 						<h2 className='text-2xl font-bold'>{name}</h2>
-						<a href={url} target="_blank">
+						<a href={url} target="_blank" rel="noreferrer">
 							<HiArrowRightOnRectangle size={20} className='cursor-pointer' />
 						</a>
 					</div>
