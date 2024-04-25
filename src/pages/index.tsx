@@ -2,7 +2,7 @@ import NavBar from "@/components/NavBar";
 import IntroCard from "@/components/IntroCard";
 import TwitterCard from "@/components/TwitterCard";
 import ToggleCard from "@/components/ToggleCard";
-import MeowyCard from "@/components/MeowyCard";
+import LinkedinCard from "@/components/LinkedInCard";
 import ArticleCard from "@/components/ArticleCard";
 import DiscordCard from "@/components/DiscordCard";
 import MailCard from "@/components/MailCard";
@@ -25,24 +25,35 @@ function Home() {
       >
       {/* <div className="mx-auto grid max-w-3xl grid-cols-4 gap-6 px-6 pb-40 pt-16"> */}
         <IntroCard section={section} />
+        {/* <div>
         <TwitterCard section={section} />
-        <ToggleCard section={section} />
+        <LinkedinCard section={section} />
+        </div> */}
+        {/* <TwitterCard section={section} /> */}
+        <SpotifyCard section={section} />
+        <div className="grid gap-4">
+          <ToggleCard section={section} />
+          <OnlineCard section={section} />
+        </div>
+        {/* <ToggleCard section={section} /> */}
         <DiscordCard section={section} />
         <MailCard section={section} />
-        <SpotifyCard section={section} />
+        <TwitterCard section={section} />
+        {/* <SpotifyCard section={section} /> */}
         {/* <MeowyCard section={section} /> */}
-        <OnlineCard section={section} />
+        {/* <OnlineCard section={section} /> */}
+        <LinkedinCard section={section} />
         <ArticleCard section={section} />
         <WorkCard />
         <StackCard />
         <MapCard section={section} />
         <TimeCard section={section} />
       </div>
-      <div className="flex justify-center items-center mt-10">
+      {/* <div className="flex justify-center items-center mt-10">
         <a href="https://anahoward.me/2004.html">
           <img src="https://cyber.dabamos.de/88x31/entranceorexit.gif" />
         </a>
-        </div>
+        </div> */}
     </div>
   );
 }

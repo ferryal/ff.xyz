@@ -23,7 +23,7 @@ const WorkCard = () => {
       url: 'https://belanja.dagangan.com/'
     },
     {
-      company: 'HijUp',
+      company: 'HIJUP',
       title: 'Software Engineer Frontend',
       logo: logoHijup,
       start: '2021',

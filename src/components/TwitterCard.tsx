@@ -1,26 +1,29 @@
-import { motion } from 'framer-motion'
-import { ArrowCircleUpIcon } from '@heroicons/react/outline'
+import { motion } from "framer-motion";
+import { ArrowCircleUpIcon } from "@heroicons/react/outline";
 const TwitterCard = ({ section }) => {
-	return (
-		<motion.a
-			href="https://twitter.com/iyalion"
-			target="_blank"
-			rel="noreferrer"
-			animate={{ opacity: ['all', 'about', 'contact'].includes(section) ? 1 : 0.3 }}
-			className="flex justify-center items-center bg-sky-200 relative dark:bg-sky-700 rounded-2xl col-span-1"	
-			whileHover="groupHover"
-			variants={{
-				groupHover: {
-					scale: 1.01,
-					transition: {
-						duration: 0.1,
-						ease: 'easeInOut',
-					},
-				},
-			}}
-		>
-			<div className="w-10 md:w-10 lg:w-22">
-				<svg
+  return (
+    <motion.a
+      href="https://twitter.com/iyalion"
+      target="_blank"
+      rel="noreferrer"
+      animate={{
+        opacity: ["all", "about", "contact"].includes(section) ? 1 : 0.3,
+      }}
+      className="flex justify-center items-center bg-white relative dark:bg-black rounded-2xl col-span-1"
+      whileHover="groupHover"
+      variants={{
+        groupHover: {
+          scale: 1.01,
+          transition: {
+            duration: 0.1,
+            ease: "easeInOut",
+          },
+        },
+      }}
+    >
+      {/* <div className="w-10 md:w-10 lg:w-22"> */}
+			<div className="text-center">
+        {/* <svg
 					viewBox="0 0 256 209"
 					version="1.1"
 					xmlns="http://www.w3.org/2000/svg"
@@ -33,11 +36,24 @@ const TwitterCard = ({ section }) => {
 							className="fill-current text-white dark:text-gray-900"
 						></path>
 					</g>
-				</svg>
-			</div>
-			<ArrowCircleUpIcon className="absolute stroke-white dark:stroke-gray-900 bottom-0 right-0 m-2 md:m-5 md:mb-5 xl:m-5 rotate-45 mb-2 mr-2 w-8 h-8" />
-		</motion.a>
-	)
-}
+				</svg> */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 30 30"
+        >
+          <path 
+						d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"
+						className="fill-current text-black dark:text-white"
+					></path>
+        </svg>
+      </div>
+      <ArrowCircleUpIcon className="absolute stroke-black dark:stroke-white bottom-0 right-0 m-2 md:m-5 md:mb-5 xl:m-5 rotate-45 mb-2 mr-2 w-8 h-8" />
+    </motion.a>
+  );
+};
 
-export default TwitterCard
+export default TwitterCard;

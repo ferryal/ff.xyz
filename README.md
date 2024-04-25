@@ -93,7 +93,7 @@ If you wish to use my website as a template for your own, feel free to do so!
 
 ### Clone the repository
 ```sh
-   git clone https://github.com/AnaArsonist/anahoward.me.git
+   git clone https://github.com/ferryal/ff.xyz.git
 ```
 ### Prerequisites 
 

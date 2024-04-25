@@ -27,8 +27,9 @@ const OnlineCard = ({ section }) => {
       <motion.div
         animate={{
           opacity: section && ["all", "about"].includes(section) ? 1 : 0.3,
-          // height: '100px',
-          // width: '100%'
+          height: '110px',
+          // height: '20vh',
+          width: '100%'
         }}
         className={`text-white rounded-2xl flex relative overflow-hidden aspect-square shadow-sm ${bgClass}`}
       >

@@ -19,6 +19,7 @@ import {
 	SiWebpack,
 	SiWebstorm,
 	SiJest,
+  SiGraphql
 } from 'react-icons/si';
 const StackCard = () => {
   return (
@@ -35,7 +36,7 @@ const StackCard = () => {
         <SiRedux size={20} />
         <SiJavascript size={20} />
         <SiAmazonaws size={20} />
-        <SiWebstorm size={20} />
+        <SiGraphql size={20} />
         <SiWebpack size={20} />
         <SiBabel size={20} />
         <SiJest size={20} />
