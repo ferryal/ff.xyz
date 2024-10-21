@@ -153,6 +153,30 @@ const ProjectsPage = () => {
 			url: "https://amartha.com/",
       techstack: [{ label: "React"}, {label: 'Redux'}, {label: 'GSAP'}],
     },
+
+    {
+      name: "Company site Tuntun Sekuritas",
+      description: "Tuntun Sekuritas started as an Indonesian securities company established in 1999. It has been operating stably for 25 years and then changed its name to Tuntun Sekuritas Indonesia, The company's controlling shareholder is Antai Securities Hong Kong, and holds securities trading, asset management, and investment advisory licenses issued by the SFC Hong Kong. The core team of Antai Hong Kong has more than 4.3 billion US dollars of investment experience in the Asian and North American markets, and has invested tens of millions of US dollars in Tuntun Sekuritas Indonesia to expand its financial region in Southeast Asia. The core team members of the company's stock technology research and development team all have more than 10 years of work experience and have experience in well-known Fintech companies. They also hold CFA, CTA, WPPE, and WMI. Most of the current employees are graduates of well-known universities in Indonesia and abroad.",
+      slug: "tuntun",
+			url: "https://tuntun.co.id/",
+      techstack: [{ label: "React"}, { label: "Next.js"}, {label: 'Redux'}, {label: 'GSAP'}],
+    },
+
+    {
+      name: "LCMP Tuntun",
+      description: "Tuntun Sekuritas started as an Indonesian securities company established in 1999. It has been operating stably for 25 years and then changed its name to Tuntun Sekuritas Indonesia, The company's controlling shareholder is Antai Securities Hong Kong, and holds securities trading, asset management, and investment advisory licenses issued by the SFC Hong Kong. The core team of Antai Hong Kong has more than 4.3 billion US dollars of investment experience in the Asian and North American markets, and has invested tens of millions of US dollars in Tuntun Sekuritas Indonesia to expand its financial region in Southeast Asia. The core team members of the company's stock technology research and development team all have more than 10 years of work experience and have experience in well-known Fintech companies. They also hold CFA, CTA, WPPE, and WMI. Most of the current employees are graduates of well-known universities in Indonesia and abroad.",
+      slug: "tuntun_lcmp",
+			url: "https://tuntun.co.id/",
+      techstack: [{ label: "React"}, { label: "Next.js"}, {label: 'Redux'}, {label: 'Typescript'}],
+    },
+
+    {
+      name: "Trauma & Empathy",
+      description: "Trauma & Empathy technology platform that has a mission of shared relationship between childhood trauma & empathy through the development of digital",
+      slug: "traumaempathy",
+			url: "https://traumaandempathy.com/",
+      techstack: [{ label: "React"}, { label: "Next.js"}, {label: 'Redux'}, {label: 'Typescript'}],
+    },
   ];
 	const [section, setSection] = useState("all");
 
