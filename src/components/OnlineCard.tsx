@@ -24,25 +24,28 @@ const OnlineCard = ({ section }) => {
 
   return (
     // <div className="flex flex-col">
-      <motion.div
-        animate={{
-          opacity: section && ["all", "about"].includes(section) ? 1 : 0.3,
-          height: '110px',
-          // height: '20vh',
-          width: '100%'
-        }}
-        className={`text-white rounded-2xl flex relative overflow-hidden aspect-square shadow-sm ${bgClass}`}
+    <motion.div
+      animate={{
+        opacity: section && ["all", "about"].includes(section) ? 1 : 0.3,
+        height: "110px",
+        // height: '20vh',
+        width: "100%",
+      }}
+      className={`text-white rounded-2xl flex relative overflow-hidden aspect-square shadow-sm ${bgClass}`}
+    >
+      <div
+        className="absolute inset-0 flex items-center justify-center text-base md:text-2xl xl:text-3xl font-bold"
+        style={{ top: "-10px" }}
       >
-        <div className="absolute inset-0 flex items-center justify-center text-base md:text-2xl xl:text-3xl font-bold">
-          <div className="flex items-center gap-3">
-            {/* Loading Dot Animation */}
-            <span className="w-2 h-2 md:h-5 md:w-5">
-              <span className="absolute w-2 h-2 md:w-5 md:h-5 bg-white rounded-full" />
-            </span>
-            <p>{status}</p>
-          </div>
+        <div className="flex items-center gap-3">
+          {/* Loading Dot Animation */}
+          <span className="w-2 h-2 md:h-5 md:w-5">
+            <span className="absolute w-2 h-2 md:w-5 md:h-5 bg-white rounded-full" />
+          </span>
+          <p>{status}</p>
         </div>
-      </motion.div>
+      </div>
+    </motion.div>
     //   <ToggleCard section={section} />
     // </div>
   );
