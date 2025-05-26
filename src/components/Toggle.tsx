@@ -41,7 +41,7 @@ export default function Toggle() {
     >
       <div className="flex items-center justify-center focus:outline-none">
         <div className="relative">
-          <div className="absolute flex items-center">
+          <div className="absolute flex items-center" style={{ top: "-10px" }}>
             <motion.span
               layout
               transition={spring}

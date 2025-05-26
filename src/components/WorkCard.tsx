@@ -1,52 +1,74 @@
-import { CiGlobe } from 'react-icons/ci'
-import Image from 'next/image'
-import logoDagangan from '@images/dagangan.png'
-import logoHijup from '@images/hijup.webp'
-import logoVirgo from '@images/virgonew.webp'
-import logoAmrtha from '@images/amartha.png'
-import Link from 'next/link'
+import { CiGlobe } from "react-icons/ci";
+import Image from "next/image";
+import logoDagangan from "@images/dagangan.png";
+import logoHijup from "@images/hijup.webp";
+import logoVirgo from "@images/virgonew.webp";
+import logoAmrtha from "@images/amartha.png";
+import logoFingular from "@images/fingular.svg";
+import logoHMS from "@images/hms.png";
+import Link from "next/link";
 // import Router from 'next/router'
 
-
 const WorkCard = () => {
-
   let resume = [
     {
-      company: 'Dagangan',
-      title: 'Software Engineer Frontend',
-      logo: logoDagangan,
-      start: '2021',
+      company: "Healthmetrics",
+      title: "Senior Frontend Engineer",
+      logo: logoHMS,
+      start: "Jan 2025",
       end: {
-        label: 'Present',
+        label: "Present",
         dateTime: new Date().getFullYear(),
       },
-      url: 'https://belanja.dagangan.com/'
+      url: "https://healthmetrics.com/",
     },
     {
-      company: 'HIJUP',
-      title: 'Software Engineer Frontend',
+      company: "Fingular",
+      title: "Frontend Engineer",
+      logo: logoFingular,
+      start: "Jun 2021",
+      end: {
+        label: "Dec 2024",
+        dateTime: new Date().getFullYear(),
+      },
+      url: "https://fingular.com/",
+    },
+    {
+      company: "Dagangan",
+      title: "Software Engineer Frontend",
+      logo: logoDagangan,
+      start: "Dec 2021",
+      end: {
+        label: "Apr 2024",
+        dateTime: new Date().getFullYear(),
+      },
+      url: "https://belanja.dagangan.com/",
+    },
+    {
+      company: "HIJUP",
+      title: "Software Engineer Frontend",
       logo: logoHijup,
-      start: '2021',
-      end: '2021',
-      url: 'https://belanja.dagangan.com/'
+      start: "Jun 2021",
+      end: "Jan 2021",
+      url: "https://belanja.dagangan.com/",
     },
     {
-      company: 'Virgo',
-      title: 'Frontend Engineer',
+      company: "Virgo",
+      title: "Frontend Engineer",
       logo: logoVirgo,
-      start: '2021',
-      end: '2021',
-      url: 'https://virgoku.id/'
+      start: "May 2021",
+      end: "Dec 2021",
+      url: "https://virgoku.id/",
     },
     {
-      company: 'Amartha',
-      title: 'Software Engineer',
+      company: "Amartha",
+      title: "Software Engineer",
       logo: logoAmrtha,
-      start: '2018',
-      end: '2021',
-      url: 'https://amartha.com/id_ID/'
+      start: "Apr 2018",
+      end: "Apr 2021",
+      url: "https://amartha.com/id_ID/",
     },
-  ]
+  ];
   return (
     // <div className="col-span-3 flex items-center justify-center rounded-2xl dark:bg-gray-900 bg-white p-3 text-fuchsia-100 md:col-span-2">
     <div className="col-span-3 aspect-2/1 pb-4 md:pb-0 flex items-center justify-center rounded-2xl dark:bg-gray-900 bg-white p-2 text-fuchsia-100 md:col-span-2">
@@ -59,7 +81,14 @@ const WorkCard = () => {
         {resume.map((role: any, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-[#121516] dark:ring-0">
-              {role.logo && <Image src={role.logo} alt="" className="h-5 w-5 rounded-full" unoptimized />}
+              {role.logo && (
+                <Image
+                  src={role.logo}
+                  alt=""
+                  className="h-5 w-5 rounded-full"
+                  unoptimized
+                />
+              )}
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
@@ -84,8 +113,8 @@ const WorkCard = () => {
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
-                </time>{' '}
-                <span aria-hidden="true">—</span>{' '}
+                </time>{" "}
+                <span aria-hidden="true">—</span>{" "}
                 <time dateTime={role.end.dateTime ?? role.end}>
                   {role.end.label ?? role.end}
                 </time>
