@@ -51,10 +51,10 @@ const IntroCard = ({ section }) => {
           <div className="2xl:mr-20 font-nunito dark:text-gray-300 lg:text-sm">
             {" "}
             {/* I&apos;m an Software Engineer Frontend */}
-            Experienced Frontend Engineer with 7 years in frontend web
-            development. Quick learner, adept at crafting intuitive UIs,
-            responsive designs, and API integration. Collaborative team player
-            committed to high-quality solutions and industry trends.
+            Experienced Fullstack Engineer with 7+ years building web
+            applications end-to-end. Adept at crafting intuitive UIs,
+            scalable backend services, and API integrations. Collaborative team
+            player committed to high-quality solutions and industry trends.
           </div>
         </div>
       </div>

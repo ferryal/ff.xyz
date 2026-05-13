@@ -177,6 +177,27 @@ const ProjectsPage = () => {
 			url: "https://traumaandempathy.com/",
       techstack: [{ label: "React"}, { label: "Next.js"}, {label: 'Redux'}, {label: 'Typescript'}],
     },
+    {
+      name: "Fleet Management System",
+      description: "Web-based fleet management platform for real-time tracking, vehicle maintenance scheduling, driver management, and route optimization to streamline logistics operations.",
+      slug: "fleet_management",
+      url: "",
+      techstack: [{ label: "Typescript" }, { label: "React" }, { label: "Next.js" }, { label: "Node.js" }, { label: "Maps API" }],
+    },
+    {
+      name: "Sophiie AI — JMS Platform Integration",
+      description: "AI-powered integration layer connecting job management systems including ServiceM8, Simpro, and Jobber. Automates job scheduling, dispatching, and reporting workflows with intelligent data sync across platforms.",
+      slug: "sophiie_ai",
+      url: "",
+      techstack: [{ label: "Typescript" }, { label: "React" }, { label: "Next.js" }, { label: "Node.js" }, { label: "AI Integration" }, { label: "REST API" }],
+    },
+    {
+      name: "AnchorWorx — HRMS & Learning Platform",
+      description: "Comprehensive HRMS solution featuring an end-to-end job application tracking system and an integrated training course platform for onboarding, compliance, and employee development.",
+      slug: "anchorworx",
+      url: "",
+      techstack: [{ label: "Typescript" }, { label: "React" }, { label: "Next.js" }, { label: "Node.js" }, { label: "PostgreSQL" }],
+    },
   ];
 	const [section, setSection] = useState("all");
 
